@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Khai báo và sử dụng biến</title>
 </head>
 <body>
-$END$
+<script>
+    var i=10;
+    var f=20.5;
+    var b=true;
+    var s="Hà Nội";
+
+    document.write('i='+i)
+    document.write('<br/>')
+    document.write('f = ' + f)
+    document.write('<br/>')
+    document.write('b = ' + b)
+    document.write('<br/>')
+    document.write('s = ' + s)
+    document.write('<br/>')
+
+    var width=20;
+    var height=10;
+    var area = width * height;
+    document.write('Area = ' + area)
+    document.write('<br/>')
+
+    a=prompt("nhập biến a");
+    c=prompt("nhập biến c");
+    if (a%c==0){
+        alert("a chia hết cho c")
+    }
+    else{
+        alert("a không chia hết cho c")
+    }
+</script>
 </body>
 </html>

@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>OutputJS</title>
 </head>
 <body>
-$END$
+<button type="button" onclick="showmessage();">Click Me!</button>
+<script>
+    function showmessage() {
+    alert('Xin chào!');
+    }
+</script>
+
+<div id="messagediv"></div>
+<button type="button" onclick="showmessage1();">Click Me1!</button>
+<script>
+    function showmessage1() {
+        document.getElementById('messagediv').innerHTML='Xin chào!';
+    }
+</script><br/>
+
+<button type="button" onclick="showmessage2();">Click Me2!</button>
+<script>
+    function showmessage2() {
+        document.write('Xin chào!');
+    }
+</script><br/>
+
+<button type="button" onclick="showmessage3();">Click Me3!</button>
+<script>
+    function showmessage3() {
+        console.log('Xin chào!');
+    }
+</script>
+
 </body>
 </html>
