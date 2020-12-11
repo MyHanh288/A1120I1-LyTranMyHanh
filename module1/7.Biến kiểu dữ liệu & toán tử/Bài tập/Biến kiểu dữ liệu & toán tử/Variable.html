@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến Kiểu dữ liệu Toán tử</title>
+</head>
+<body>
+<script>
+    document.write("Bài 1 :");
+    document.write("<br/>");
+    diemly = prompt("Nhập điểm Lý :");
+    diemhoa = prompt("Nhập điểm Hóa :");
+    diemsinh = prompt("Nhập điểm Sinh :");
+    let ly = parseFloat(diemly);
+    let hoa = parseFloat(diemhoa);
+    let sinh = parseFloat(diemsinh);
+    document.write("Điểm môn vật lý :" + ly);
+    document.write("<br/>");
+    document.write("Điểm môn hóa học :" + hoa);
+    document.write("<br/>");
+    document.write("Điểm môn sinh học :" + sinh);
+    document.write("<br/>");
+    let total = parseFloat(ly+hoa+sinh);
+    document.write("Tổng điểm :" + total);
+    document.write("<br/>");
+    let tb = parseFloat(total/3);
+    document.write("Điểm trung bình:" + tb);
+    document.write("<br/>");
+
+    document.write("Bài 2 :");
+    document.write("<br/>");
+    doC = prompt("Nhập độ C :");
+    let C = parseFloat(doC);
+    document.write("Độ C :" + C);
+    document.write("<br/>");
+    let F = parseFloat(9*C/5 + 32);
+    document.write("Độ F :" + F);
+    document.write("<br/>");
+
+    document.write("Bài 3 :");
+    document.write("<br/>");
+    bk = prompt("Nhập bán kính :");
+    let r = parseFloat(bk);
+    document.write("Bán kính hình tròn :" + r);
+    document.write("<br/>");
+    let S = parseFloat(3.14*r*r);
+    document.write("Diện tích hình tròn :" + S);
+    document.write("<br/>");
+    let CV = parseFloat(3.14*(r+r));
+    document.write("Chu vi hình tròn :" + CV);
+    document.write("<br/>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" width="30px" id="num"></td>
+        <td>
+            <select width="20px" id="money">
+                <option name="VN" value="VN1"> VietNam </option>
+                <option name="USD" value="USD1"> USD </option>
+            </select>
+        </td>
+        <td>
+            <select width="20px" id="exchange">
+                <option name="USD1" value="USD"> USD </option>
+                <option name="VN1" value="VN"> VietNam </option>
+            </select>
+        </td>
+        <td style="background-color: cornflowerblue"><button type="button" onclick="result()">Convert</button></td>
+    </tr>
+</table>
+<p style="color: blue" id="kqua"></p>
+<script>
+    function result()
+    {
+        let gt = document.getElementById("num").value;
+        let tien = document.getElementById("money").value;
+        let doi = document.getElementById("exchange").value;
+        if(tien=='VN1' && doi=='USD'){
+           var kq = parseFloat(gt/23000);
+        }
+        if (tien=='USD1'&& doi=='VN'){
+            var kq = parseFloat(gt*23000);
+        }
+        document.getElementById('kqua').innerHTML='Result :'+ kq + doi ;
+    }
+</script>
+</body>
+</html>
