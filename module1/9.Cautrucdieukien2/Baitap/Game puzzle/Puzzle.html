@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+<body>
+<div style="display: flex">
+    <img src="Anh/Chim1.jpg" onclick="changeImgA()" id="h1" height="96px" width="800px"/>
+    <img src="Anh/Chuot1.jpg" onclick="changeImgB()" id="h2" height="96px" width="800px"/>
+    <img src="Anh/Oc2.jpg" onclick="changeImgC()" id="h3" height="96px" width="800px"/>
+    <img src="Anh/Tegiac3.jpg" onclick="changeImgD()" id="h4" height="96px" width="800px"/>
+</div>
+<script>
+    let h1 = document.getElementById("h1");
+    let h2 = document.getElementById("h2");
+    let h3 = document.getElementById("h3");
+    let h4 = document.getElementById("h4");
+    function changeImgA() {
+        if (Chim1.getAttribute("src")=="Ảnh/Chuot1.jpg") {
+            Chim1.src = "Ảnh/Chuot1.jpg"
+        }else if (Chim1.getAttribute("src")=="Ảnh/Oc1.jpg") {
+            Chim1.src = "Ảnh/Oc1.jpg"
+        }else (Chim1.getAttribute("src")=="Ảnh/Tegiac1.jpg"){
+            Chim1.src = "Ảnh/Tegiac1.jpg"
+        }
+        check()
+    function check() {
+
+    }
+</body>
+</html>

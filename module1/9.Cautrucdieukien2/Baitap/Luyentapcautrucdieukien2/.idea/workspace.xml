@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ac5d0ac-38ac-46b4-bca9-7a46b939bd3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Câu lệnh switch-case/Date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Máy tính đơn giản/Simple_Caculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tính chỉ số cân nặng của cơ thể/BMI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thực hành/Sự kiện bàn phím/Nobita.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thực hành/Sự kiện chuột/Mouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Git&amp;HTML/Git Project/GitProject" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Git&amp;HTML/Git Project/GitProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7.Biến kiểu dữ liệu &amp; toán tử/Bài tập/Ứng dụng máy tính/Caculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7.Biến kiểu dữ liệu &amp; toán tử/Bài tập/Ứng dụng máy tính/Caculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../8.Cấu trúc điều kiện1/Thực hành/Luyện tập với toán tử 3 ngôi/Employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Cấu trúc điều kiện1/Thực hành/Luyện tập với toán tử 3 ngôi/Employee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../8.Cấu trúc điều kiện1/Thực hành/Luyện tập với toán tử 3 ngôi/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Cấu trúc điều kiện1/Thực hành/Luyện tập với toán tử 3 ngôi/add.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1ljpPp2e5BP3OyVMlpk0QFVBcUR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ứng dụng vui Doyouloveme" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ac5d0ac-38ac-46b4-bca9-7a46b939bd3b" name="Default Changelist" comment="" />
+      <created>1608120333029</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608120333029</updated>
+      <workItem from="1608120335429" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1608120364518">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608120364518" />
+  </component>
+</project>

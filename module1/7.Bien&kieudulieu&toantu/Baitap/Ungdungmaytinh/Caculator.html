@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form action="Caculator.html">
+    <input type="text" width="30px" id="num1">
+    <input type="text" width="30px" id="num2"><br/>
+    <br/>
+    <button type="button" onclick="add()">Addition(+)</button>
+    <button type="button" onclick="sub()">Subtraction(-)</button>
+    <button type="button" onclick="mul()">Multiplication(x)</button>
+    <button type="button" onclick="div()">Division(/)</button><br/>
+    <br/>
+</form>
+<p style="color: blue" id="result"></p>
+<script>
+    function add() {
+        let gt1 = document.getElementById("num1").value;
+        let gt11 = parseFloat(gt1);
+        let gt2 = document.getElementById("num2").value;
+        let gt21 = parseFloat(gt2);
+        let tong = parseFloat(gt11+gt21);
+        document.getElementById("result").innerHTML= 'Result Addition :' + tong;
+    }
+    function sub() {
+        let gt1 = document.getElementById("num1").value;
+        let gt11 = parseFloat(gt1);
+        let gt2 = document.getElementById("num2").value;
+        let gt21 = parseFloat(gt2);
+        let hieu = parseFloat(gt11-gt21);
+        document.getElementById("result").innerHTML= 'Result Subtraction :' + hieu;
+    }
+    function mul() {
+        let gt1 = document.getElementById("num1").value;
+        let gt11 = parseFloat(gt1);
+        let gt2 = document.getElementById("num2").value;
+        let gt21 = parseFloat(gt2);
+        let nhan = parseFloat(gt11*gt21);
+        document.getElementById("result").innerHTML= 'Result Multiplication :' + nhan;
+    }
+    function div() {
+        let gt1 = document.getElementById("num1").value;
+        let gt11 = parseFloat(gt1);
+        let gt2 = document.getElementById("num2").value;
+        let gt21 = parseFloat(gt2);
+        let chia = parseFloat(gt11/gt21);
+        document.getElementById("result").innerHTML= 'Result Division :' + chia;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" readonly id="num">
+<table>
+    <tr>
+        <td><button onclick="inputNum(1)">1</button></td>
+        <td><button onclick="inputNum(2)">2</button></td>
+        <td><button onclick="inputNum(3)">3</button></td>
+        <td><button onclick="inputNum('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="inputNum(4)">4</button></td>
+        <td><button onclick="inputNum(5)">5</button></td>
+        <td><button onclick="inputNum(6)">6</button></td>
+        <td><button onclick="inputNum('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="inputNum(7)">7</button></td>
+        <td><button onclick="inputNum(8)">8</button></td>
+        <td><button onclick="inputNum(9)">9</button></td>
+        <td><button onclick="inputNum('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clearInput()">C</button></td>
+        <td><button onclick="inputNum(0)">0</button></td>
+        <td><button onclick="tinhToan()">=</button></td>
+        <td><button onclick="inputNum('/')">/</button></td>
+    </tr>
+</table>
+<script>
+    let isCal = false;
+    function inputNum(temp) {
+        if (isCal) {
+            if (temp != "+" && temp != "-" && temp != "*" && temp != "/") {
+                document.getElementById("num").value = "";
+            }
+        }
+        document.getElementById("num").value += temp;
+        isCal = false;
+    }
+    function tinhToan() {
+        document.getElementById("num").value = eval(document.getElementById("num").value);
+        isCal = true;
+    }
+    function clearInput() {
+        document.getElementById("num").value = '';
+    }
+</script>
+</body>
+</html>
