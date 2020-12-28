@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonaci</title>
+</head>
+<body>
+<script>
+    /* Hien thi 20 so dau tien trong day fibonaci
+    let i = 0, j = 1, temp ;
+        document.write(i + ' ');
+        document.write(j + ' ');
+    for (let n = 1; n<=18; n++){
+        document.write(i + j + ' ');
+        temp = j;
+        j = i+j;
+        i = temp;
+    }
+    */
+    /* Tim so dau tien trong day fibonaci chia het cho 5
+    let i = 0, j = 1, temp ;
+    for (let n = 1; n<=18; n++) {
+        if ((i + j) % 5 == 0) {
+            document.write(i + j);
+            break;
+        }
+        temp = j;
+        j = i + j;
+        i = temp;
+    }
+    */
+    let i = 0, j = 1, temp ;
+    let sum = 1;
+    for (let n = 1; n<=18; n++){
+        sum += i+j
+        temp = j;
+        j = i+j;
+        i = temp;
+    }
+    document.write(sum);
+</script>
+
+</body>
+</html>

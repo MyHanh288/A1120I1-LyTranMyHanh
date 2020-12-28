@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu dien</title>
+</head>
+<body>
+<input type="text" id="eng">
+<input type="text" onclick="" id="cov">
+<button onclick="eNG()">convert</button>
+<script>
+    function eNG(){
+        let english = ["thanks","love","smile","happy"];
+        let vietnamese = ["cam on", "yeu", "nu cuoi", "hanh phuc"];
+        let str = document.getElementById('eng').value;
+        for (let i=0; i<english.length;i++){
+            if (str==english[i]){
+                document.getElementById('cov').value = vietnamese[i];
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
