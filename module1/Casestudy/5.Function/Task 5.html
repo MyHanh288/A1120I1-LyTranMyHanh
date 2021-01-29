@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrListCustomer = [];
+    function displayMainMenu() {
+        let choose = parseInt(prompt("1.Add new Customer"+"\n2.Display Information Customer"+"\n3.Edit Information Customer"+"\n4.Delete Customer"+"\n5.Exit"));
+        switch (choose) {
+            case 1 :{
+                addNewCustomer();
+                break;
+            }
+            case 2 :{
+                displayCustomer();
+                break;
+            }
+            case 3 :{
+                editCustomer();
+                break;
+            }
+            case 4 :{
+                deleteCustomer();
+                break;
+            }
+            case 5 :{
+                break;
+            }
+            default : {
+                alert("Failed");
+            }
+        }
+    }
+    function deleteCustomer() {
+        let temp = "";
+        for (let i=0; i<arrListCustomer.length;i++){
+            temp += i + ". Name :" + arrListCustomer[i][0]+"\n";
+        }
+        let chooseDelete = parseInt(prompt(temp));
+        let check = parseInt(prompt("Are you want to delete Customer" + "\n1.Yes  2.No"));
+        if(check===1) {
+            arrListCustomer.splice(chooseDelete, 1);
+            alert("Successful")
+        }else {
+            alert("Cancel");
+        }
+        displayMainMenu();
+    }
+    function editCustomer() {
+        let temp = "";
+        for (let i=0; i<arrListCustomer.length;i++){
+            temp += i + ". Name :" + arrListCustomer[i][0]+"\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        let chooseEdit = parseInt(prompt("1.Name :" + arrListCustomer[chooseDisplay][0]+"\n"+
+            "2.ID :" + arrListCustomer[chooseDisplay][1]+"\n"+
+            "3.Birthday :" + arrListCustomer[chooseDisplay][2]+"\n"+
+            "4.Email :" + arrListCustomer[chooseDisplay][3]+"\n"+
+            "5.Address :" + arrListCustomer[chooseDisplay][4]+"\n"+
+            "6.Type Customer :" + arrListCustomer[chooseDisplay][5]+"\n"+
+            "7.Discount :" + arrListCustomer[chooseDisplay][6]+"\n"+
+            "8.Quantity Included :" + arrListCustomer[chooseDisplay][7]+"\n"+
+            "9.Rent Days :" + arrListCustomer[chooseDisplay][8]+"\n"+
+            "10.Type Service :" + arrListCustomer[chooseDisplay][9]+"\n"+
+            "11.Type Room :" + arrListCustomer[chooseDisplay][10]));
+        switch (chooseEdit) {
+            case 1 : {
+                arrListCustomer[chooseDisplay][0]=prompt("Enter name :");
+                break;
+            }
+            case 2 : {
+                arrListCustomer[chooseDisplay][1]=prompt("Enter ID :");
+                break;
+            }
+            case 3 : {
+                arrListCustomer[chooseDisplay][2]=prompt("Enter Birthday :");
+                break;
+            }
+            case 4 : {
+                arrListCustomer[chooseDisplay][3]=prompt("Enter Email :");
+                break;
+            }
+            case 5 : {
+                arrListCustomer[chooseDisplay][4]=prompt("Enter Address :");
+                break;
+            }
+            case 6 : {
+                arrListCustomer[chooseDisplay][5]=prompt("Enter Type Customer :");
+                break;
+            }
+            case 7 : {
+                arrListCustomer[chooseDisplay][6]=prompt("Enter Discount :");
+                break;
+            }
+            case 8 : {
+                arrListCustomer[chooseDisplay][7]=prompt("Enter Quantity Included :");
+                break;
+            }
+            case 9 : {
+                arrListCustomer[chooseDisplay][8]=prompt("Enter Rent Days :");
+                break;
+            }
+            case 10 : {
+                arrListCustomer[chooseDisplay][9]=prompt("Enter Type Service :");
+                break;
+            }
+            case 11 : {
+                arrListCustomer[chooseDisplay][10]=prompt("Enter Type Room :");
+                break;
+            }
+            default : {
+                alert("Failed");
+            }
+        }
+        editCustomer();
+    }
+    
+    function displayCustomer() {
+        let temp = "";
+        for (let i=0; i<arrListCustomer.length;i++){
+            temp += i + ". Name :" + arrListCustomer[i][0]+"\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        alert("Name :" + arrListCustomer[chooseDisplay][0]+"\n"+
+            "ID :" + arrListCustomer[chooseDisplay][1]+"\n"+
+            "Birthday :" + arrListCustomer[chooseDisplay][2]+"\n"+
+            "Email :" + arrListCustomer[chooseDisplay][3]+"\n"+
+            "Address :" + arrListCustomer[chooseDisplay][4]+"\n"+
+            "Type Customer :" + arrListCustomer[chooseDisplay][5]+"\n"+
+            "Discount :" + arrListCustomer[chooseDisplay][6]+"\n"+
+            "Quantity Included :" + arrListCustomer[chooseDisplay][7]+"\n"+
+            "Rent Days :" + arrListCustomer[chooseDisplay][8]+"\n"+
+            "Type Service :" + arrListCustomer[chooseDisplay][9]+"\n"+
+            "Type Room :" + arrListCustomer[chooseDisplay][10]);
+        displayMainMenu();
+    }
+    function addNewCustomer() {
+        let cusInfo = [];
+        let name = prompt("Input name :");
+        let iD = prompt("Input ID :");
+        let birthday = prompt("Input birthday :");
+        let email = prompt("Input email :");
+        let address = prompt("Input address :");
+        let typeCustomer = prompt("Input type Customer :");
+        let discount = prompt("Input discount :");
+        let quantityIncluded = prompt("Input quantity included :");
+        let rentDays = prompt("Input rent days :");
+        let typeService = prompt("Input type Service :");
+        let typeRoom = prompt("Input type Room :");
+
+        cusInfo.push(name);
+        cusInfo.push(iD);
+        cusInfo.push(birthday);
+        cusInfo.push(email);
+        cusInfo.push(address);
+        cusInfo.push(typeCustomer);
+        cusInfo.push(discount);
+        cusInfo.push(quantityIncluded);
+        cusInfo.push(rentDays);
+        cusInfo.push(typeService);
+        cusInfo.push(typeRoom);
+
+        arrListCustomer.push(cusInfo);
+
+        alert("Successful");
+        displayMainMenu();
+    }
+    displayMainMenu();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert feet and meter</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Number</th>
+        <th>From</th>
+        <th>To</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" width="30px" id="num"></td>
+        <td>
+            <select width="20px" id="length">
+                <option name="feet" value="feet1"> Feet </option>
+                <option name="meter" value="meter1"> Meter </option>
+            </select>
+        </td>
+        <td>
+            <select width="20px" id="convert">
+                <option name="meter1" value="meter"> Meter </option>
+                <option name="feet1" value="feet"> Feet </option>
+            </select>
+        </td>
+        <td style="background-color: cornflowerblue"><button type="button" onclick="result()">Convert</button></td>
+    </tr>
+</table>
+<p style="color: blue" id="kqua"></p>
+<script>
+    function result()
+    {
+        let n = document.getElementById("num").value;
+        let gt1 = document.getElementById("length").value;
+        let gt2 = document.getElementById("convert").value;
+        if(gt1=='feet1' && gt2=='meter'){
+            var kq = parseFloat(0.305*n);
+    }
+        if (gt1=='meter1'&& gt2=='feet'){
+            var kq = parseFloat(3.275*n);
+        }
+        document.getElementById('kqua').innerHTML='Result :'+ kq + gt2 ;
+    }
+</script>
+</body>
+</html>

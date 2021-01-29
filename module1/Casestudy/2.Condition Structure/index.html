@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .input {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td class="input">Full name</td>
+        <td><input type="text" ; id="name"></td>
+    </tr>
+    <tr>
+        <td class="input">ID</td>
+        <td><input type="text" ; id="iD"></td>
+    </tr>
+    <tr>
+        <td class="input">Birthday</td>
+        <td><input type="date" ; id="bir"></td>
+    </tr>
+    <tr>
+        <td class="input">Email</td>
+        <td><input type = "text"; id="email"></td>
+    </tr>
+    <tr>
+        <td class="input">Address</td>
+        <td><input type="text" ; id="address"></td>
+    </tr>
+    <tr>
+        <td class="input">Customer Type</td>
+        <td>
+            <select id="cusType">
+                <option>Diamond</option>
+                <option>Platinum</option>
+                <option>Gold</option>
+                <option>Silver</option>
+                <option>Member</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="input">Quantity included</td>
+        <td><input type="text" ; id="inc"></td>
+    </tr>
+    <tr>
+        <td class="input">Rent days</td>
+        <td><input type="text" ; id="day"></td>
+    </tr>
+    <tr>
+        <td class="input">Type of service</td>
+        <td>
+            <select id="typeSer">
+                <option>Villa</option>
+                <option>House</option>
+                <option>Room</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="input">Type of room</td>
+        <td>
+            <select id="roomtype">
+                <option>Vip</option>
+                <option>Business</option>
+                <option>Normal</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button type="button" onclick="output()">Submit</button>
+        </td>
+    </tr>
+</table>
+<script>
+    let name = document.getElementById('name');
+    let iD = document.getElementById('iD');
+    let bir = document.getElementById('bir');
+    let email = document.getElementById('email');
+    let address = document.getElementById('address');
+    let cusType = document.getElementById('cusType');
+    let inc = document.getElementById('inc');
+    let day = document.getElementById('day');
+    let typeSer = document.getElementById('typeSer');
+    let roomtype = document.getElementById('roomtype');
+    function cv(a){
+        if (a == 'Villa') return 500;
+        else if (a == 'House') return 300;
+        else return 100;
+    }
+    function date(b) {
+        switch (b) {
+            case 1:
+                return 0;
+                break;
+            case 2:
+            case 3:
+            case 4:
+                return 10;
+                break;
+            case 5:
+            case 6:
+            case 7:
+                return 20;
+                break;
+            default :
+                return 30;
+                break;
+        }
+    }
+    function addr(c) {
+        switch (c) {
+            case "Đà Nẵng":
+                return 20;
+                break;
+            case "Huế":
+                return 10;
+                break;
+            case "Quảng Nam":
+                return 5;
+                break;
+            default :
+                return 0;
+                break;
+        }
+    }
+    function custype(d) {
+        switch (d) {
+            case "Diamond":
+                return 15;
+                break;
+            case "Platium":
+                return 10;
+                break;
+            case "Gold":
+                return 5;
+                break;
+            case "Silver":
+                return 2;
+                break;
+            default :
+                return 0;
+                break;
+        }
+    }
+
+        function Total(a, b, e) {
+            return a * b * (1 - e / 100);
+        }
+
+        function output() {
+            let sout = "<table><tr>" + "<td>Full Name:</td><td>" + name.value + "</td></tr>" + "" +
+                "<tr>" + "<td>ID :</td><td>" + iD.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Birthday :</td><td>" + bir.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Email :</td><td>" + email.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Address :</td><td>" + address.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Custome Type :</td><td>" + cusType.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Quantity included :</td><td>" + inc.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Rent Days :</td><td>" + day.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Type of Service :</td><td>" + typeSer.value + "</td></tr>" + "" +
+                "<tr>" + "<td>Type of room :</td><td>" + roomtype.value + "</td></tr>" + "</table>"
+            document.writeln(sout);
+            let temp = cv(typeSer.value);
+            let daydis = date(day.value);
+            let addrdis = addr(address.value);
+            let cusdis = custype(cusType.value);
+            let discout = daydis + addrdis + cusdis;
+            document.writeln('Total : ' + Total(temp, parseInt(day.value), discout) + '$');
+        }
+
+</script>
+
+</body>
+</html>

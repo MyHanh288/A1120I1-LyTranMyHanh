@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class battery{
+        constructor(energy) {
+            this.energy = energy;
+        }
+        getEnergy(){
+            return this.energy;
+        }
+        setEnergy(energy){
+            this.energy = energy;
+        }
+        decreaseEnergy(){
+            if (this.energy > 0) {
+                this.energy--;
+            }else{
+                alert("Het pin");
+            }
+        }
+    }
+    class flashLamp {
+        constructor(battery, status) {
+            this.battery = battery;
+            this.status = status;
+        }
+        getBattery() {
+            return this.battery;
+        }
+        setBattery(battery) {
+            this.battery = battery;
+        }
+        light() {
+            if(this.status){
+                this.battery.decreaseEnergy();
+            }else {
+                alert("Lam on bat den")
+            }
+        }
+        turnOn() {
+            this.status = true;
+        }
+        turnOff() {
+            this.status = false;
+        }
+    }
+    let battery1 = new battery(100);
+    let falshlamp1 = new flashLamp(battery1,true);
+    if(falshlamp1.status){
+        alert("Den dang bat")
+    }else {
+        alert("Den dang tat")
+    }
+    for(let i=0;i<10;i++){
+        falshlamp1.light();
+    }
+    alert("Pin hien tai:" +falshlamp1.getBattery().getEnergy());
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperature{
+        constructor(c) {
+            if (parseInt(c)<parseInt(-273)){
+                this.c = parseInt(-273);
+            }else{
+                this.c = parseInt(c);
+            }
+        }
+        getC(){
+            return this.c;
+        }
+        cConvertF(){
+            return (1.8*this.c+32);
+        }
+        cConvertK(){
+            return (this.c+273);
+        }
+    }
+    let nhietdo = new temperature(25);
+    let c = nhietdo.getC();
+    let f = nhietdo.cConvertF();
+    let k = nhietdo.cConvertK();
+    alert(c);
+    alert(f);
+    alert(k);
+
+</script>
+</body>
+</html>
