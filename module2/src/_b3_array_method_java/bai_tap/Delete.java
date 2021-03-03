@@ -4,39 +4,34 @@ import java.util.Scanner;
 
 public class Delete {
     public static void main(String[] args) {
-        int size;
+        int i, n, c;
         int[] array;
         Scanner scanner = new Scanner(System.in);
         do {
-            System.out.print("Enter a size:");
-            size = scanner.nextInt();
-            if (size > 20)
-                System.out.println("Size does not exceed 20");
-        } while (size > 20);
-        array = new int[size];
-        int i = 0;
-        while (i < array.length) {
-            System.out.print("Enter element " + (i + 1) + ": ");
+            System.out.println("Nhập vào số phần tử của mảng: ");
+            n = scanner.nextInt();
+        } while (n <= 0);
+        array = new int[n];
+
+        System.out.println("Nhập các phần tử cho mảng: ");
+        for (i = 0; i < n; i++) {
+            System.out.print("Nhập phần tử thứ " + i + ": ");
             array[i] = scanner.nextInt();
-            i++;
         }
-        System.out.printf("%-20s%s", "Elements in array: ", "");
-        for (int j = 0; j < array.length; j++) {
-            System.out.print(array[j] + "\t");
-        }
-        System.out.print("Enter number :");
-        int input_number = scanner.nextInt();
-        boolean isExist = false;
-        for (int j = 0; j < array.length; j++) {
-            if (array[j] == (input_number)) {
-                System.out.println("Position of " + input_number + " in the list is: " + (j + 1));
-                isExist = true;
-                break;
+
+        System.out.println("Nhập số nguyên k: ");
+        int k = scanner.nextInt();
+
+        for (c = i = 0; i < n; i++) {
+            if (array[i] != k) {
+                array[c] = array[i];
+                c++;
             }
         }
-        if (!isExist)
-            System.out.println("Not found" + input_number + " in the list.");
-
-
+        n = c;
+        System.out.println("Mảng còn lại sau khi xóa phần tử " + k + " là: ");
+        for (i = 0; i < n; i++) {
+            System.out.print(array[i] + "\t");
+        }
     }
 }

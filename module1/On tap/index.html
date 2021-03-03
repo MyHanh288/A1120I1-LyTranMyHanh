@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function func1(a) {
+        if(a == 2)
+            return 2;
+        return a * func1(a - 1);
+    }
+    alert(func1(5));
+
+    void main()
+    {
+        int n, reverse = 0, rem, temp;
+        printf("Nhap vao so nguyen: ");
+        scanf("%d", &n);
+        temp = n;
+        while(temp != 0)
+        {
+            rem = temp % 10;
+            reverse = reverse*10 + rem;
+            temp /= 10;
+        }
+        if(reverse == n)
+            printf("%d la so doi xung", n);
+        else
+            printf("%d khong doi xung", n);
+        getch();
+    }
+
+
+</script>
+
 </body>
 </html>

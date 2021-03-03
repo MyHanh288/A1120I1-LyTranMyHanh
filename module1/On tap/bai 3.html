@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = Array ();
+    let n = 0;
+    let k;
+    function inputLength() {
+        do{
+            n = parseInt(prompt("Input n (độ dài dãy số)"))
+        }while ((Number.isNaN(n))||(n<0)||(n>50))
+    }
+    function inputArr() {
+        for (let i = 0; i<n; i++){
+            do{
+                a[i]=parseInt(prompt("a["+parseInt(i)+"]="));
+            }while (Number.isNaN(a[i]))
+        }
+    }
+    function inputK() {
+        do{
+            k = parseInt(prompt("Nhập số nguyên dương K"));
+        }while ((Number.isNaN(k))||(k<1))
+    }
+    function demTongchiahet(k) {
+        let dem = 0;
+        for (let i=0; i<a.length-1;i++){
+            for (let j = i+1; j<a.length;j++){
+                if((a[i]+a[j])%k==0){
+                    dem ++;
+                }
+            }
+        }
+        return dem;
+    }
+    inputLength();
+    inputArr();
+    inputK();
+    console.log(k);
+    console.log(a);
+    console.log(demTongchiahet(k));
+</script>
+
 </body>
 </html>

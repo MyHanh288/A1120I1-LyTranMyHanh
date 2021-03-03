@@ -2,9 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<table id = "result"></table>
+<button onclick="themKH()">Them KH</button>
+<script>
+    class KhachHang{
+        constructor(id=Math.floor(Math.random()*1000),name,phone,add,email) {
+            this.id = id;
+            this.name = name;
+            this.phone = phone;
+            this.add = add;
+            this.email = email;
+        }
+        setname(name){
+            this.name = name;
+        }
+        setphone(phone){
+            this.phone = phone;
+        }
+        setadd(add){
+            this.add = add;
+        }
+        setemail(email){
+            this.email = email;
+        }
+        getId(){
+            return this.id;
+        }
+        getName(){
+            return this.name;
+        }
+        getPhone(){
+            return this.phone;
+        }
+        getAdd(){
+            return this.add;
+        }
+        getEmail(){
+            return this.email;
+        }
+    }
+    function themKH() {
+        let a = new KhachHang();
+        let temp = prompt("Name :");
+        a.setname(temp);
+        let temp1 = prompt("Phone :");
+        a.setphone(temp1);
+        let temp2 = prompt("Add :");
+        a.setadd(temp2);
+        let temp3 = prompt("Email :");
+        a.setemail(temp3);
+        let t = '<tr/>';
+        t += '<th>'+a.getId()+'</th>';
+        t += '<th>'+a.getName()+'</th>';
+        t += '<th>'+a.getPhone()+'</th>';
+        t += '<th>'+a.getAdd()+'</th>';
+        t += '<th>'+a.getEmail()+'</th>';
+        document.getElementById('result').innerHTML += t;
+    }
+    let t = '<tr/>';
+    t += '<th>ID</th>';
+    t += '<th>Name</th>';
+    t += '<th>Phone</th>';
+    t += '<th>Add</th>';
+    t += '<th>Email</th>';
+    document.getElementById('result').innerHTML += t;
+</script>
 </body>
 </html>

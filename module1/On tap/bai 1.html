@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = Array();
+    let b = Array();
+    let j = 0;
+    let sum = 0;
+    function inputArr(a) {
+        for (let i=0; i<20; i++){
+            let temp = parseInt(prompt("Nhập số nguyên thứ" + i + "trong dãy(nhập kí tự để kết thúc dãy)"));
+            if (Number.isNaN(temp)){
+                break;
+            }
+            a[i] = temp;
+            if (check3vs5(a[i])){
+                sum += a[i];
+                b[j]=a[i];
+                j++;
+            }
+        }
+    }
+    function check3vs5(k) {
+        return (k%3===0)&&(k%5===0);
+    }
+    inputArr(a);
+    console.log(b);
+    console.log(sum);
+    console.log(a);
+</script>
+
 </body>
 </html>

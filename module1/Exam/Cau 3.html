@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseInt(prompt("Enter your number :"));
+    function isFibonaci(a){
+        let i = 1, j = 1, temp ;
+        for (let n = 1; n<=a; n++){
+            temp = j;
+            j = i+j;
+            i = temp;
+        }
+        if (a==temp){
+            alert(a + " is Fibonacci");
+        }else{
+            alert(a + " is not Fibonacci");
+        }
+    }
+    isFibonaci(a);
+
+</script>
+
 </body>
 </html>

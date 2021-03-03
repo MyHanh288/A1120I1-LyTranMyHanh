@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = Array();
+    for (let i=0; i<10; i++){
+        let n = parseInt(prompt("Enter your number :"));
+        if(Number.isNaN(n)||(!Number.isInteger(n))){
+            break;
+        }
+        arr[i] = n;
+    }
+    alert(arr);
+    function tryRemoveFromArray(arr) {
+        for (let i=0; i<arr.length;i++){
+            let x = parseInt(prompt("Enter X :"));
+            if(arr[i]!=x){
+                alert(arr);
+                break;
+            }else{
+                arr[i+1]=arr[i];
+                arr.pop();
+                alert(arr);
+                break;
+            }
+        }
+        }
+    tryRemoveFromArray(arr);
+</script>
+
 </body>
 </html>

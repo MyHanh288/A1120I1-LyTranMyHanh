@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let k;
+    function inputK() {
+        do {
+            k = parseInt(prompt("Enter student of mark :"));
+        } while (Number.isNaN(k) || (k < 0) || (k > 100));
+        return k;
+    }
+    function par(k) {
+        if (!checkPass(k)) return k;
+        if (k%5<=3) return k;
+        return (k+(5-k%5));
+    }
+    function checkPass(k) {
+        return (k>49);
+    }
+    inputK();
+    console.log(checkPass(k));
+    k = par(k);
+    console.log(k);
+</script>
+
 </body>
 </html>

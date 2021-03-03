@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<canvas id="myC" width="200" height="200" style="border: 1px"></canvas>
+<script>
+    class Circle {
+        constructor(x, y, radius, color) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.color = color;
+        }
+        getX() {
+            return this.x;
+        }
+        getY() {
+            return this.y;
+        }
+        getRadius() {
+            return this.radius;
+        }
+        getColor() {
+            return this.color;
+        }
+        setX() {
+            this.x = x;
+        }
+        setY() {
+            this.y = y;
+        }
+        setRadius() {
+            this.radius = radius;
+        }
+        setColor() {
+            this.color = color;
+        }
+    }
+        let circle1 = new Circle(10,10,100,"red");
+        let x = circle1.getX();
+        let y = circle1.getY();
+        let radius = circle1.getRadius();
+        let color = circle1.getColor();
+        let circle2 = document.getElementById("myC");
+        let ctx = circle2.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(10,10,50,0,2*Math.PI);
+        ctx.stroke();
+</script>
+
 </body>
 </html>
