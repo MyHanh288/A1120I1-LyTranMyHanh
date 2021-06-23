@@ -5,34 +5,36 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-
-    private static final String USER_NAME = "root";
-    private static final String PASSWORD = "codegym";
-    private static final String HOST = "localhost";
-    private static final String DATABASE = "demo";
-    private static final String PORT = "3306";
+    private static String jdbcURL = "jdbc:mysql://localhost:3306/demo?useSSL=false";
+    private static String jdbcUsername = "root";
+    private static String jdbcPassword = "codegym";
 
     private static Connection connection;
 
-    public static Connection getConnection(){
+    public DBConnection() {
+
+    }
+
+    public static Connection getConnection() {
+        connection = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://"+HOST+":"+PORT+"/"+DATABASE, USER_NAME, PASSWORD);
-        } catch (ClassNotFoundException | SQLException e) {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+        } catch (SQLException | ClassNotFoundException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return connection;
     }
 
-    public static void close(){
+    public static void close() {
         try {
-            if(connection != null){
+            if (connection != null) {
                 connection.close();
             }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
-
-
 }
+

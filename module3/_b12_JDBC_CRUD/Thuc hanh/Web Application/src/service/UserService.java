@@ -9,13 +9,13 @@ public interface UserService {
 
     void save(User user);
 
-    List<User> finById(String name);
+    List<User> findByName(String name);
 
     void update(int id, User user);
 
     void remove(int id);
 
-    User finById1(int id);
+    User findById(int id);
 
     List<User> findByCountry(String country);
 

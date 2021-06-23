@@ -11,13 +11,13 @@ public interface UserRepository {
 
     void save(User user);
 
-    List<User> finById(String name);
+    List<User> findByName(String name);
 
     User update(int id, User user);
 
     void remove(int id);
 
-    User finById1(int id);
+    User findById(int id);
 
     List<User> findByCountry (String Country);
 

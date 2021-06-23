@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public  List<User> finById(String name) {
-        return repository.finById(name);
+    public  List<User> findByName(String name) {
+        return repository.findByName(name);
     }
 
     @Override
@@ -37,8 +37,8 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User finById1(int id) {
-        return repository.finById1(id);
+    public User findById(int id) {
+        return repository.findById(id);
     }
 
     @Override

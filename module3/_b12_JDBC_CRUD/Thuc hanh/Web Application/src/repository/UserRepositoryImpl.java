@@ -32,9 +32,11 @@ public class UserRepositoryImpl implements UserRepository {
                 statement = connection.prepareStatement(SELECT_FROM_USERS);
                 resultSet = statement.executeQuery();
                 User user = null;
+                System.out.println(statement);
                 while (resultSet.next())
                 {
                     int id = resultSet.getInt(1);
+                    System.out.println(resultSet.getInt(1));
                     String name= resultSet.getString("name");
                     String email = resultSet.getString("email");
                     String country = resultSet.getString("country");
@@ -87,7 +89,7 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public List<User> finById(String name) {
+    public List<User> findByName(String name) {
         List<User> userList = new ArrayList<>();
         Connection connection= DBConnection.getConnection();
         PreparedStatement statement = null;
@@ -186,7 +188,7 @@ public class UserRepositoryImpl implements UserRepository {
 
 
     @Override
-    public User finById1(int id) {
+    public User findById(int id) {
         User user = null;
         Connection connection= DBConnection.getConnection();
         PreparedStatement statement = null;

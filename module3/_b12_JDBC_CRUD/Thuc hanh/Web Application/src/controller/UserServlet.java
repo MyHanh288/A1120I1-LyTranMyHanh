@@ -36,14 +36,24 @@ public class UserServlet extends HttpServlet {
             case "search":
                 searchUser(request,response);
                 break;
+            case "searchCountry":
+                searchCountry(request,response);
+                break;
             default:
                 showUserList(request,response);
         }
     }
 
+    private void searchCountry(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String country = request.getParameter("country");
+        request.setAttribute("userList",service.findByCountry(country));
+        RequestDispatcher dispatcher= request.getRequestDispatcher("/user/searchCountry.jsp");
+        dispatcher.forward(request,response);
+    }
+
     private void searchUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
-        request.setAttribute("userList",service.finById(name));
+        request.setAttribute("userList",service.findByName(name));
         RequestDispatcher dispatcher= request.getRequestDispatcher("/user/search.jsp");
         dispatcher.forward(request,response);
     }
@@ -58,10 +68,6 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("country");
         int id= Integer.parseInt(request.getParameter("id"));
         User user = new User(name,email,country);
-        System.out.println("usernew  :" + id);
-        System.out.println("usernamenew  :" + name);
-        System.out.println("useremailnew  :" + email);
-        System.out.println("usercountrynew :" + country);
         service.update(id,user);
         showUserList(request,response);
     }
@@ -105,15 +111,35 @@ public class UserServlet extends HttpServlet {
             case "search":
                 showSearchForm(request, response);
                 break;
+            case "searchCountry":
+                showSearchCountryForm(request, response);
+                break;
+            case "sort":
+                showSortForm(request, response);
+                break;
             default:
                 showUserList(request, response);
         }
 
     }
 
+    private void showSortForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        service.sort();
+        request.setAttribute("user",service.sort());
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/user/list.jsp");
+        dispatcher.forward(request,response);
+    }
+
+    private void showSearchCountryForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String country = request.getParameter("country");
+        request.setAttribute("user",service.findByCountry(country));
+        RequestDispatcher dispatcher= request.getRequestDispatcher("/user/searchCountry.jsp");
+        dispatcher.forward(request,response);
+    }
+
     private void showSearchForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
-        request.setAttribute("userList",service.finById(name));
+        request.setAttribute("userList",service.findByName(name));
         RequestDispatcher dispatcher= request.getRequestDispatcher("/user/search.jsp");
         dispatcher.forward(request,response);
     }
@@ -128,8 +154,8 @@ public class UserServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        request.setAttribute("userList",service.finById1(id));
-        User user = service.finById1(id);
+        request.setAttribute("userList",service.findById(id));
+        User user = service.findById(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/user/edit.jsp");
         dispatcher.forward(request,response);
     }
