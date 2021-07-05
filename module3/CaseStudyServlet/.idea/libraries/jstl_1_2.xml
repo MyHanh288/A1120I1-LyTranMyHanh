@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jstl-1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/thuvien/jstl-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/thuvien/mysql-connector-java-8.0.17.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/thuvien/servlet-api-2.5-6.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
