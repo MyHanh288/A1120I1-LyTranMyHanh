@@ -65,7 +65,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void editCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int customerId = Integer.parseInt(request.getParameter("CustomerId"));
+      int customerId1 = Integer.parseInt(request.getParameter("CustomerId"));
         String customerName = request.getParameter("CustomerName");
         String customerBir =  request.getParameter("CustomerBir");
         String gender = request.getParameter("Gender");
@@ -74,15 +74,18 @@ public class CustomerServlet extends HttpServlet {
         String cusEmail = request.getParameter("CusEmail");
         String address = request.getParameter("Address");
         String customerTypeId = request.getParameter("CustomerTypeId");
-        Customer customer = new Customer(customerId,customerName,customerBir,gender,cusIdNum,cusTelNum,cusEmail,address, new CustomerType(customerTypeId));
-        customerService.update(customerId,customer);
+        System.out.println("id đang chinh la L" + customerId1);
+        Customer customer = new Customer(customerName,customerBir,gender,cusIdNum,cusTelNum,cusEmail,address, new CustomerType(customerTypeId));
+        customerService.update(customerId1,customer);
         showCustomerList(request,response);
 
     }
 
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int customerId = Integer.parseInt(request.getParameter("CustomerId"));
+//        int customerId = Integer.parseInt(request.getParameter("CustomerId"));
+
         String customerName = request.getParameter("CustomerName");
+        System.out.println("them mới id"+ customerName);
         String customerBir =  request.getParameter("CustomerBir");
         String gender = request.getParameter("Gender");
         int cusIdNum =Integer.parseInt(request.getParameter("CusIdNum"));
@@ -90,9 +93,11 @@ public class CustomerServlet extends HttpServlet {
         String cusEmail = request.getParameter("CusEmail");
         String address = request.getParameter("Address");
         String customerTypeId = request.getParameter("CustomerTypeId");
-        Customer customer = new Customer(customerId,customerName,customerBir,gender,cusIdNum,cusTelNum,cusEmail,address, new CustomerType(customerTypeId));
+        System.out.println("them mới id"+ customerName);
+        Customer customer = new Customer(customerName,customerBir,gender,cusIdNum,cusTelNum,cusEmail,address, new CustomerType(customerTypeId));
         customerService.save(customer);
         showCustomerList(request,response);
+        System.out.println("them mới"+ customer);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -138,28 +143,32 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showDeleteCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int customerId = Integer.parseInt(request.getParameter("CustomerId"));
+        int customerId = Integer.parseInt(request.getParameter("id"));
         customerService.remove(customerId);
-        request.setAttribute("customer",customerService.findAll());
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/customer/list.jsp");
-        dispatcher.forward(request,response);
+        System.out.println("id xoa là " + customerId);
+        showCustomerList(request,response);
+
+//        request.setAttribute("customer",customerService.findAll());
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("/customer/list.jsp");
+//        dispatcher.forward(request,response);
     }
 
     private void showEditCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int customerId = Integer.parseInt(request.getParameter("CustomerId"));
-        List<CustomerType> customerTypes = customerTypeService.findAll();
-        request.setAttribute("customerTypes",customerTypes);
+        int customerId = Integer.parseInt(request.getParameter("id"));
+//        List<CustomerType> customerTypes = customerTypeService.findAll();
+        request.setAttribute("customerTypes", customerTypeService.findAll());
         request.setAttribute("customer",customerService.findById(customerId));
-        Customer customer = customerService.findById(customerId);
+//        Customer customer = customerService.findById(customerId);
         RequestDispatcher dispatcher= request.getRequestDispatcher("/customer/edit.jsp");
         dispatcher.forward(request,response);
     }
 
     private void showCreateCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int customerId = Integer.parseInt(request.getParameter("CustomerId"));
-        List<CustomerType> customerTypes = customerTypeService.findAll();
-        request.setAttribute("customerTypes",customerTypes);
+//        int customerId = Integer.parseInt(request.getParameter("CustomerId"));
+//        List<CustomerType> customerTypes = customerTypeService.findAll();
+        request.setAttribute("customerTypes",customerTypeService.findAll());
         RequestDispatcher dispatcher= request.getRequestDispatcher("/customer/create.jsp");
         dispatcher.forward(request,response);
+        System.out.println("customerTypes" + customerTypeService.findAll());
     }
 }

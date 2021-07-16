@@ -11,7 +11,7 @@ public interface CustomerService {
 
     List<Customer> findByName(String customerName);
 
-    Customer update(int customerId, Customer customer);
+    Customer update(int customerIda, Customer customer);
 
     void remove(int customerId);
 

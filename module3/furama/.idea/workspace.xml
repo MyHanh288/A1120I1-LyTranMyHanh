@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="furama:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25a569cb-22d4-41a9-866e-5092283631a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CaseStudyServlet/.idea/libraries/thuvien.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/furama_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/CustomerTypeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/AccompaniedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/DetailContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Diploma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Regency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/RentalType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/ContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/CustomerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/CustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/CustomerTypeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/CustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/CustomerTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4.Git&amp;HTML/Git Project/GitProject" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/4.Git&amp;HTML/Git Project/GitProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudy/Furama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudy/Furama.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/.idea/artifacts/CaseStudyServlet_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/.idea/artifacts/CaseStudyServlet_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/.idea/libraries/jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/CaseStudyServlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/CaseStudyServlet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/controller/CustomerTypeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/AccompaniedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Contract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/CustomerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/DetailContract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Diploma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Regency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/RentalType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/model/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/repository/ContractRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/repository/CustomerRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/repository/CustomerTypeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/repository/CustomerTypeRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/repository/DBConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/service/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/service/CustomerTypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/classes/service/CustomerTypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/customer/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customer/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customer/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/customer/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customer/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/customerType/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customerType/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/customerType/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/customerType/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/image/images.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/image/images.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/artifacts/CaseStudyServlet_war_exploded/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/controller/CustomerTypeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/AccompaniedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Contract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/CustomerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/DetailContract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Diploma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Regency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/RentalType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/model/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/repository/ContractRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/repository/CustomerRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/repository/CustomerTypeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/repository/CustomerTypeRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/repository/DBConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/service/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/service/CustomerTypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/out/production/CaseStudyServlet/service/CustomerTypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/src/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/src/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/src/repository/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/src/repository/CustomerRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/src/repository/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/src/repository/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/src/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/src/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/src/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/src/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyServlet/web/customer/view.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1utM7N99bGZ5PSAzxTMBSnhsAN9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DISK D\A1120I1-LyTranMyHanh\module3\furama\web" />
+      <recent name="D:\DISK D\A1120I1-LyTranMyHanh\module3\furama\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.37" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <deployment>
+        <artifact name="furama:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_37_furama" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57100" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="furama:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25a569cb-22d4-41a9-866e-5092283631a0" name="Default Changelist" comment="" />
+      <created>1625480263170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625480263170</updated>
+      <workItem from="1625480267046" duration="1063000" />
+      <workItem from="1625648737541" duration="1620000" />
+      <workItem from="1625658527600" duration="312000" />
+      <workItem from="1625658856666" duration="3521000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="326" y="0" key="#Project_Structure" timestamp="1625481257259">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="326" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1625481257259" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625480459556">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1625480459556" />
+    <state x="552" y="105" key="FileChooserDialogImpl" timestamp="1625481248061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="552" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1625481248061" />
+    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1625481360978">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625481360978" />
+    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1625481360977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1625481360977" />
+    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1625481360977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1625481360977" />
+    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1625481360977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1625481360977" />
+    <state width="905" height="179" key="GridCell.Tab.1.bottom" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state width="905" height="179" key="GridCell.Tab.1.center" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state width="905" height="179" key="GridCell.Tab.1.left" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state width="905" height="179" key="GridCell.Tab.1.right" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state width="905" height="179" key="GridCell.Tab.2.bottom" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state width="905" height="179" key="GridCell.Tab.2.center" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state width="905" height="179" key="GridCell.Tab.2.left" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state width="905" height="179" key="GridCell.Tab.2.right" timestamp="1625481360979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1625481360979" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1625481214801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1625481214801" />
+  </component>
+</project>

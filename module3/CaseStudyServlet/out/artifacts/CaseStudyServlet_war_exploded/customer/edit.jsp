@@ -36,48 +36,48 @@
                         <form method="post">
                             <div class="form-group">
                                 <label>Customer Id:</label>
-                                <input type="text" name="customerId" class="form-control" placeholder="CustomerId" value="${customer.getcustomerId()}"  readonly>
+                                <input type="text" name="CustomerId" class="form-control" placeholder="CustomerId" value="${customer.getCustomerId()}"  readonly>
                             </div>
                             <div class="form-group">
                                 <label >Customer Name:</label>
-                                <input type="text" name="customerName" class="form-control"  placeholder="CustomerName:" value="${customer.getcustomerName()}">
+                                <input type="text" name="CustomerName" class="form-control"  placeholder="CustomerName:" value="${customer.getCustomerName()}">
                             </div>
                             <div class="form-group">
                                 <label >Birthday:</label>
-                                <input type="text"  name="customerBir" class="form-control"  placeholder="Birthday" value="${customer.getcustomerBir()}">
+                                <input type="text"  name="CustomerBir" class="form-control"  placeholder="Birthday" value="${customer.getCustomerBir()}">
                             </div>
                             <div class="form-group">
                                 <label >Gendet:</label>
-                                <input type="text"  name="gender" class="form-control"  placeholder="Gender" value="${customer.getgender()}">
+                                <input type="text"  name="Gender" class="form-control"  placeholder="Gender" value="${customer.getGender()}">
                             </div>
                             <div class="form-group">
                                 <label >Id Number:</label>
-                                <input type="text"  name="cusIdNum" class="form-control"  placeholder="xxxxxxxxx" value="${customer.getcusIdNum()}">
+                                <input type="text"  name="CusIdNum" class="form-control"  placeholder="xxxxxxxxx" value="${customer.getCusIdNum()}">
                             </div>
                             <div class="form-group">
                                 <label >Telephone Number:</label>
-                                <input type="text"  name="cusTelNum" class="form-control"  placeholder="090-xxx-xxxx" value="${customer.getcusTelNum()}">
+                                <input type="text"  name="CusTelNum" class="form-control"  placeholder="090-xxx-xxxx" value="${customer.getCusTelNum()}">
                             </div>
                             <div class="form-group">
                                 <label >Email:</label>
-                                <input type="text"  name="cusEmail" class="form-control"  placeholder="abc@gmail.com" value="${customer.getcusEmail()}">
+                                <input type="text"  name="CusEmail" class="form-control"  placeholder="abc@gmail.com" value="${customer.getCusEmail()}">
                             </div>
                             <div class="form-group">
                                 <label >Customer Type:</label>
-                                <select name="customerTypeId" id="customerTypeId">
-                                    <option value="${customer.getcustomerType().getcustomerTypeId()}">
-                                        ${customer.getcustomerType().getcustomerTypeName()}
+                                <select name="CustomerTypeId" id="customerTypeId">
+                                    <option value="${customer.getCustomerType().getCustomerTypeId()}">
+                                        ${customer.getCustomerType().getCustomerTypeName()}
                                     </option>
                                     <c:forEach items="${customerTypes}" var="customerTypes">
-                                        <option  value="${customerTypes.getcustomerTypeId()}">
-                                                ${lcustomerTypes.getcustomerTypeName()}
+                                        <option  value="${customerTypes.getCustomerTypeId()}">
+                                                ${customerTypes.getCustomerTypeName()}
                                         </option>
                                     </c:forEach>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label >Address:</label>
-                                <input type="text"  name="address" class="form-control"  placeholder="Address" value="${customer.getaddress()}">
+                                <input type="text"  name="Address" class="form-control"  placeholder="Address" value="${customer.getAddress()}">
                             </div>
                             <button type="submit" name="submit" class="btn btn-primary">Edit</button>
                         </form>
@@ -86,7 +86,6 @@
             </article>
         </div>
     </nav>
-    <jsp:include page="/footer.jsp"/>
 </div>
 
 

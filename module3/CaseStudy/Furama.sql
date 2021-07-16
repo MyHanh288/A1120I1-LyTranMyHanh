@@ -1,14 +1,16 @@
 create database furama;
 use furama;
-
+--   drop database furama;
 create table CustomerType(
 CustomerTypeId varchar(5) not null primary key,
-CustomerTypeName varchar(50) not null);
+CustomerTypeName varchar(50) not null);select * from customer;
 
+select * from Customer;
+-- insert into Customer(CustomerName, CustomerBir, Gender, CusIdNum, CusTelNum, CusEmail, Address, CustomerTypeId) values ('Nguyen Thanh Binh','20/8/1999','nu',12345678,902538765,'binhnguyen@gmail.com','Quang Nam','Go') ;
 create table Customer(
 CustomerId int not null auto_increment primary key,
 CustomerName varchar(50) not null,
-CustomerBir date not null,
+CustomerBir  varchar(50)  not null,
 Gender varchar(50) not null,
 CusIdNum int not null,
 CusTelNum int not null,
@@ -118,6 +120,7 @@ insert into CustomerType (CustomerTypeId, CustomerTypeName) value
 ('Si', 'Silver'),
 ('Me', 'Member');
 
+insert into Customer(CustomerName, CustomerBir, Gender, CusIdNum, CusTelNum, CusEmail, Address, CustomerTypeId) value ('Nguyen Thanh Binh','20/8/1999','nu',12345678,902538765,'binhnguyen@gmail.com','Quang Nam','Go') ;
 
 insert into Customer(CustomerName, CustomerBir, Gender, CusIdNum, CusTelNum, CusEmail, Address, CustomerTypeId) value
 ('Tran Duc Manh', '1998-09-26', 'male', 201938908, 738907270,'manh98@gmail.com','Quang Binh','Si'),
@@ -358,3 +361,8 @@ having  sum(TotalPayment) > 10000000);
 select EmployeeId, EmployeeName, EmpEmail, EmpTelNum, EmployeeBir from Employee
 union all
 select CustomerId, CustomerName, CusEmail, CusTelNum, CustomerBir from Customer;
+
+
+
+select CustomerId,CustomerName,CustomerBir,Gender,CusIdNum,CusTelNum,CusEmail,Address,Customer.CustomerTypeId,CustomerTypeName from Customer 
+left join CustomerType on CustomerType.CustomerTypeId = Customer.CustomerTypeId

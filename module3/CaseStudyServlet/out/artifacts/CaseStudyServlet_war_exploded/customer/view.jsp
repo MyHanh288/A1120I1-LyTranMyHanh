@@ -44,15 +44,15 @@
                                 <th>Address</th>
                             </tr>
                             <tr>
-                                <td>${customer.getcustomerId()}</td>
-                                <td>${customer.getcustomerName()}</td>
-                                <td>${customer.getcustomerBir()}</td>
-                                <td>${customer.getgender()}</td>
-                                <td>${customer.getcusIdNum()}</td>
-                                <td>${customer.getcusTelNum()}</td>
-                                <td>${customer.getcusEmail()}</td>
-                                <td>${customer.getcustomerType().getcustomerTypeName()}</td>
-                                <td>${customer.getaddress()}</td>
+                                <td>${customer.getCustomerId()}</td>
+                                <td>${customer.getCustomerName()}</td>
+                                <td>${customer.getCustomerBir()}</td>
+                                <td>${customer.getGender()}</td>
+                                <td>${customer.getCusIdNum()}</td>
+                                <td>${customer.getCusTelNum()}</td>
+                                <td>${customer.getCusEmail()}</td>
+                                <td>${customer.getCustomerType().getCustomerTypeName()}</td>
+                                <td>${customer.getAddress()}</td>
                             </tr>
                         </table>
                     </div>

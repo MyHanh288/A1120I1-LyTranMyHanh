@@ -49,27 +49,27 @@
                             <tbody>
                             <c:forEach items="${customer}" var="customer">
                             <tr>
-                                <td>${customer.getcustomerId()}</td>
-                                <td>${customer.getcustomerName()}</td>
-                                <td>${customer.getcustomerBir()}</td>
-                                <td>${customer.getgender()}</td>
-                                <td>${customer.getcusIdNum()}</td>
-                                <td>${customer.getcusTelNum()}</td>
-                                <td>${customer.getcusEmail()}</td>
-                                <td>${customer.getcustomerType().getcustomerTypeName()}</td>
-                                <td>${customer.getaddress()}</td>
+                                <td>${customer.getCustomerId()}</td>
+                                <td>${customer.getCustomerName()}</td>
+                                <td>${customer.getCustomerBir()}</td>
+                                <td>${customer.getGender()}</td>
+                                <td>${customer.getCusIdNum()}</td>
+                                <td>${customer.getCusTelNum()}</td>
+                                <td>${customer.getCusEmail()}</td>
+                                <td>${customer.getCustomerType().getCustomerTypeName()}</td>
+                                <td>${customer.getAddress()}</td>
                                 <td>
-                                    <a href="/customer?action=edit&id=${customer.getcustomerId()}">
+                                    <a href="/customer?action=edit&id=${customer.getCustomerId()}">
                                         Edit
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="#myModal_${customer.getcustomerId()}" role="button"
+                                    <a href="#myModal_${customer.getCustomerId()}" role="button"
                                        class="btn btn-large btn-danger"
                                        data-toggle="modal">Delete</a>
                                 </td>
                             </tr>
-                            <div id="myModal_${customer.getcustomerId()}" class="modal fade">
+                            <div id="myModal_${customer.getCustomerId()}" class="modal fade">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -78,11 +78,11 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Are you sure you want to delete this ${customer.getcustomerId()}?</p>
+                                            <p>Are you sure you want to delete this ${customer.getCustomerId()}?</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                            <a href="/customer?action=delete&id=${customer.getcustomerId()}"
+                                            <a href="/customer?action=delete&id=${customer.getCustomerId()}"
                                                role="button" class="btn btn-danger" title="Xoa">Delete</a>
                                         </div>
                                     </div>
@@ -96,5 +96,27 @@
         </div>
     </nav>
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="jquery/jquery-3.5.1.min.js"></script>
+<script src="datatables/js/jquery.dataTables.min.js"></script>
+<script src="datatables/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#tableHopdong').dataTable(
+            {
+                "dom":'lrtip',
+                "lengthChange": false,
+                "pageLength": 2
+            }
+        );
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+    })
+</script>
 </body>
 </html>
+

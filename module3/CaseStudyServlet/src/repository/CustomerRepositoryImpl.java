@@ -65,16 +65,18 @@ public class CustomerRepositoryImpl implements CustomerRepository{
         if(connection != null)
         {
             try{
-                statement = connection.prepareStatement("insert into Customer(CustomerName, CustomerBir, Gender, CusIdNum, CusTelNum, CusEmail, Address, CustomerTypeId) values =(?,?,?,?,?,?,?,?) ");
+                statement = connection.prepareStatement("insert into Customer(CustomerName, CustomerBir, Gender, CusIdNum, CusTelNum, CusEmail, Address, CustomerTypeId) values (?,?,?,?,?,?,?,?) ;");
                 statement.setString(1,customer.getCustomerName());
                 statement.setString(2,customer.getCustomerBir());
                 statement.setString(3, customer.getGender());
                 statement.setInt(4,customer.getCusIdNum());
                 statement.setInt(5,customer.getCusTelNum());
                 statement.setString(6,customer.getCusEmail());
-                statement.setString(7,customer.getCustomerType().getCustomerTypeId());
-                statement.setString(8,customer.getAddress());
+                statement.setString(7,customer.getAddress());
+                statement.setString(8,customer.getCustomerType().getCustomerTypeId());
+                System.out.println("da them " + statement);
                 statement.executeUpdate();
+                System.out.println("da them 2 " + statement);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -141,17 +143,19 @@ public class CustomerRepositoryImpl implements CustomerRepository{
         PreparedStatement statement = null;
         if (connection!=null) {
             try {
-                statement = connection.prepareStatement("update Customer set CustomerName =?,CustomerBir=?,Gender=?,CusIdNum=?,CusTelNum=?,CusEmail=?,CustomerTypeId=?, Address=? where CustomerId=?");
+                statement = connection.prepareStatement("update Customer set CustomerName =?,CustomerBir=?,Gender=?,CusIdNum=? ,CusTelNum=? ,CusEmail=? ,Address=?  ,CustomerTypeId=? where CustomerId=? ;");
                 statement.setString(1, customer.getCustomerName());
                 statement.setString(2, customer.getCustomerBir());
                 statement.setString(3, customer.getGender());
                 statement.setInt(4, customer.getCusIdNum());
                 statement.setInt(5, customer.getCusTelNum());
                 statement.setString(6, customer.getCusEmail());
-                statement.setString(7, customer.getCustomerType().getCustomerTypeId());
-                statement.setString(8, customer.getAddress());
-                statement.setInt(9, customer.getCustomerId());
+                statement.setString(7, customer.getAddress());
+                statement.setString(8, customer.getCustomerType().getCustomerTypeId());
+                statement.setInt(9, customerId);
                 statement.executeUpdate();
+
+
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             } finally {
@@ -199,8 +203,9 @@ public class CustomerRepositoryImpl implements CustomerRepository{
         if(connection != null)
         {
             try{
-                statement = connection.prepareStatement("select CustomerId,CustomerName,CustomerBir,Gender,CusIdNum,CusTelNum,CusEmail,Address,CustomerTypeName,CustomerType.CustomerTypeId from Customer left join CustomerType on CustomerType.CustomerTypeId = Customer.CustomerTypeId where Customer.CustomerName= ?");
+                statement = connection.prepareStatement("select CustomerId,CustomerName,CustomerBir,Gender,CusIdNum,CusTelNum,CusEmail,Address,CustomerTypeName,CustomerType.CustomerTypeId from Customer inner join CustomerType on CustomerType.CustomerTypeId = Customer.CustomerTypeId where Customer.CustomerId= ?;");
                 statement.setInt(1, customerId);
+                System.out.println("id truyen sang:"+ customerId);
                 resultSet = statement.executeQuery();
                 while (resultSet.next())
                 {
@@ -212,8 +217,10 @@ public class CustomerRepositoryImpl implements CustomerRepository{
                     int cusTelNum = resultSet.getInt("CusTelNum");
                     String cusEmail = resultSet.getString("CusEmail");
                     String address = resultSet.getString("Address");
-                    String customerTypeId = resultSet.getString("CustomerTypeId");
                     String customerTypeName = resultSet.getString("CustomerTypeName");
+                    String customerTypeId = resultSet.getString("CustomerTypeId");
+
+                    System.out.println("id dang chinh sua la :" + customerId1);
                     customer = new Customer(customerId1,customerName1,customerBir,gender,cusIdNum,cusTelNum,cusEmail,address, new CustomerType(customerTypeId,customerTypeName));
                 }
             } catch (SQLException e) {
