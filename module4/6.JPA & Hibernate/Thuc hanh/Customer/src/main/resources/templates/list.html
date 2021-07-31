@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of customer</title>
+</head>
+<body>
+
+<div>
+    <a href="/create">
+        Add a new customer
+    </a>
+</div>
+
+<form method="get" action="/search">
+    <input type="text" name="nameSearch" th:value="${nameSearch}">
+    <button>Search</button>
+</form>
+
+<div>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Date of birth</th>
+            <th>Address</th>
+            <th>Telephone number</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr th:each="customer: ${customers}">
+            <td th:text="${customer.id}"></td>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.dateOfBirth}"></td>
+            <td th:text="${customer.address}"></td>
+            <td th:text="${customer.telNum}"></td>
+            <td><a th:href="@{edit/(id= ${customer.id})}">Edit</a></td>
+            <td><a th:href="@{delete/(id=${customer.id})}">Delete</a></td>
+        </tr>
+    </table>
+
+    <div th:if="${nameSearch == null}">
+    <span>
+        <a th:if="${customers.hasPrevious()}" th:href="@{/customer(page=${customers.number - 1})}">Previous</a>
+    </span>
+
+        <span th:each="pageNo: ${#numbers.sequence(0,customers.totalPages -1)}">
+            <a th:href="@{/customer(page = ${pageNo})}" th:text="${pageNo}"></a>
+    </span>
+
+        <span>
+        <a th:if="${customers.hasNext()}" th:href="@{/customer(page=${customers.number + 1})}">Next</a>
+    </span>
+    </div>
+
+    <div th:if="${nameSearch != null}">
+    <span>
+        <a th:if="${customers.hasPrevious()}" th:href="@{/search(page=${customers.number - 1} , nameSearch=${nameSearch})}">Previous</a>
+    </span>
+
+        <span th:each="pageNo: ${#numbers.sequence(0,customers.totalPages -1)}">
+            <a th:href="@{/search(page = ${pageNo} , nameSearch=${nameSearch})}" th:text="${pageNo}"></a>
+    </span>
+        <span>
+        <a th:if="${customers.hasNext()}" th:href="@{/search(page=${customers.number + 1}, nameSearch=${nameSearch})}">Next</a>
+    </span>
+    </div>
+
+</div>
+
+</body>
+</html>
