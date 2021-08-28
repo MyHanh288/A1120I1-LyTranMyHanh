@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="/create">Add new a phone</a>
+</div>
+<div>
+    <form method="get" action="/phone">
+        <input type="text" name="nameSearch" th:value="${nameSearch}">
+        <button>Search</button>
+    </form>
+</div>
+<div>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Producer</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr th:each="phone:${phones}">
+            <td th:text="${phone.id}"></td>
+            <td th:text="${phone.name}"></td>
+            <td th:text="${phone.producer}"></td>
+            <td th:text="${phone.model}"></td>
+            <td th:text="${phone.price}"></td>
+            <td><a th:href="@{/edit/(id=${phone.id})}">Edit</a></td>
+            <td><a th:href="@{/delete/(id=${phone.id})}">Delete</a></td>
+        </tr>
+    </table>
+
+    <span>
+        <a th:if="${phones.hasPrevious()}" th:href="@{/phone(page=${phones.number - 1} , nameSearch=${nameSearch})}">Previous</a>
+    </span>
+
+    <span th:each="pageNo: ${#numbers.sequence(0,phones.totalPages -1)}">
+            <a th:href="@{/phone(page = ${pageNo} , nameSearch=${nameSearch})}" th:text="${pageNo}"></a>
+    </span>
+    <span>
+        <a th:if="${phones.hasNext()}" th:href="@{/phone(page=${phones.number + 1}, nameSearch=${nameSearch})}">Next</a>
+    </span>
+</div>
+
+</body>
+</html>

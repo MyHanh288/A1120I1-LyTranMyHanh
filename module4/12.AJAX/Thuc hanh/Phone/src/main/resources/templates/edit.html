@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/edit/(id=${phones.id})}" th:object="${phones}">
+    <label>Name</label>
+    <input type="text" th:field="*{name}">
+    <label>Producer</label>
+    <input type="text" th:field="*{producer}">
+    <label>Model</label>
+    <input type="text" th:field="*{model}">
+    <label>Price</label>
+    <input type="text" th:field="*{price}">
+
+    <button>Submit</button>
+</form>
+</body>
+</html>
