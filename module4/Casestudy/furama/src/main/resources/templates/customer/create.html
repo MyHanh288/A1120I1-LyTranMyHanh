@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/create" th:object="${customers}">
+    <label>Customer Id </label>
+    <input type="text" th:field="*{customerId}">
+<!--    <p class="validColor" th:if="${#fields.hasErrors('customerId')}" th:errors="*{customerName}"></p>-->
+    <bdr>
+    <label>Customer name</label>
+    <input type="text" th:field="*{customerName}">
+    <p class="validColor" th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}"></p>
+    <br>
+    <label>Date of birth</label>
+    <input type="text" th:field="*{dateOfBirth}">
+    <p class="validColor" th:if="${#fields.hasErrors('dateOfBirth')}" th:errors="*{dateOfBirth}"></p>
+    <br>
+    <label>Gender</label>
+    <select th:field="*{gender}">
+        <option th:text="male" th:value="1">
+        </option>
+        <option th:text="female" th:value="0">
+        </option>
+        <option th:text="LGBT" th:value="2">
+        </option>
+    </select>
+    <p class="validColor" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}"></p>
+    <br>
+    <label>Id Card</label>
+    <input type="text" th:field="*{idCard}">
+    <p class="validColor" th:if="${#fields.hasErrors('idCard')}" th:errors="*{idCard}"></p>
+    <br>
+    <label>Tel Num</label>
+    <input type="text" th:field="*{telNum}">
+    <p class="validColor" th:if="${#fields.hasErrors('telNum')}" th:errors="*{telNum}"></p>
+    <br>
+    <label>Email</label>
+    <input type="text" th:field="*{email}">
+    <p class="validColor" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+    <br>
+    <label>Address</label>
+    <input type="text" th:field="*{address}">
+    <p class="validColor" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></p>
+    <br>
+    <label>Customer Type</label>
+    <select th:field="*{customerType}">
+        <option th:each="customerType:${customerTypes}" th:text="${customerType.customerTypeName}" th:value="${customerType.customerTypeId}">
+        </option>
+    </select>
+
+    <button>Submit</button>
+</form>
+</body>
+</html>

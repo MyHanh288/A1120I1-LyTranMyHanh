@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/edit/(maGiaoDich=${giaodichs.maGiaoDich})}" th:object="${giaodichs}">
+    <label>Ma giao dich</label>
+    <input type="text" th:field="*{maGiaoDich}">
+    <br>
+    <label>Ten khach hang</label>
+    <select th:field="*{khachHang}">
+        <option th:each="khachhang:${giaodichs.khachHang}" th:text="${giaodichs.khachHang.tenKhachHang}"
+                th:value="${giaodichs.khachHang.maKhachHang}">
+        </option>
+        <option th:each="khachhang:${khachhangs}" th:text="${khachhang.tenKhachHang}"
+                th:value="${khachhang.maKhachHang}">
+        </option>
+    </select>
+    <br>
+    <label>Loai dich vu</label>
+    <input type="text" th:field="*{loaiDichVu}">
+    <br>
+    <label>Ngay giao dich</label>
+    <input type="text" th:field="*{ngayGiaoDich}">
+    <br>
+    <label>Don gia</label>
+    <input type="text" th:field="*{donGia}">
+    <br>
+    <label>Dien tich</label>
+    <input type="text" th:field="*{dienTich}">
+    <br>
+    <button>Sua</button>
+</form>
+</body>
+</html>

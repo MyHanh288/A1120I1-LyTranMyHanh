@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/create" th:object="${khuyenmais}">
+<!--    <label>Ma khuyen mai </label>-->
+<!--    <input type="text" th:field="*{khuyenMaiId}">-->
+<!--        <p class="validColor" th:if="${#fields.hasErrors('khuyenMaiId')}" th:errors="*{khuyenMaiId}"></p>-->
+<!--    <bdr>-->
+        <label>Tieu de</label>
+        <input type="text" th:field="*{tieuDe}">
+        <p class="validColor" th:if="${#fields.hasErrors('tieuDe')}" th:errors="*{tieuDe}"></p>
+        <br>
+        <label>Thoi gian bat dau</label>
+        <input type="text" th:field="*{thoiGianBatDau}">
+        <p class="validColor" th:if="${#fields.hasErrors('thoiGianBatDau')}" th:errors="*{thoiGianBatDau}"></p>
+        <br>
+        <label>Thoi gian ket thuc</label>
+        <input type="text" th:field="*{thoiGianKetThuc}">
+        <p class="validColor" th:if="${#fields.hasErrors('thoiGianKetThuc')}" th:errors="*{thoiGianKetThuc}"></p>
+        <br>
+        <label>Muc giam gia</label>
+        <input type="text" th:field="*{mucGiamGia}">
+        <p class="validColor" th:if="${#fields.hasErrors('mucGiamGia')}" th:errors="*{mucGiamGia}"></p>
+        <br>
+        <label>Chi tiet</label>
+        <input type="text" th:field="*{chiTiet}">
+        <p class="validColor" th:if="${#fields.hasErrors('chiTiet')}" th:errors="*{chiTiet}"></p>
+        <br>
+
+        <button>Tao moi</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/edit/(khuyenMaiId=${khuyenmais.khuyenMaiId})}" th:object="${khuyenmais}">
+    <label>Ma khuyen mai</label>
+    <input type="text" th:field="*{khuyenMaiId}">
+    <br>
+    <label>Tieu de</label>
+    <input type="text" th:field="*{tieuDe}">
+    <br>
+    <label>Thoi gian bat dau</label>
+    <input type="text" th:field="*{thoiGianBatDau}">
+    <br>
+    <label>Thoi gian ket thuc</label>
+    <input type="text" th:field="*{thoiGianKetThuc}">
+    <br>
+    <label>Muc giam gia</label>
+    <input type="text" th:field="*{mucGiamGia}">
+    <br>
+    <label>Chi tiet</label>
+    <input type="text" th:field="*{chiTiet}">
+    <br>
+<!--    <label>Customer Type</label>-->
+<!--    <select th:field="*{customerType}">-->
+<!--        <option th:each="customerType:${customers.customerType}" th:text="${customers.customerType.customerTypeName}"-->
+<!--                th:value="${customers.customerType.customerTypeId}">-->
+<!--        </option>-->
+<!--        <option th:each="customerType:${customerTypes}" th:text="${customerType.customerTypeName}"-->
+<!--                th:value="${customerType.customerTypeId}">-->
+<!--        </option>-->
+<!--    </select>-->
+<!--    <br>-->
+    <button>Sua</button>
+</form>
+
+</body>
+</html>
